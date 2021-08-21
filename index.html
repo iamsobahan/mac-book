@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
     <section class="mt-5">
         <div class="container">
             <div class="row">
@@ -22,7 +23,7 @@
                     <img class="img-fluid" src="images/mac.png" alt="">
                 </div>
                 <div class="col-lg-6">
-                    <div class="text">
+                    <div class="header-part">
                         <h1>Customize your Blue 24-inch iMac with apple M1 chip.</h1>
                         <p class="text-dark">Apple Macbook Pro 16 Inch Laptop 2019 Model (2.3 GHz, I9,
                             16GB, 1TB
@@ -30,53 +31,55 @@
                             Graphics Air With M1 Silicon Chip NEW Apple Macbook Pro 13 Inch Laptop 2020 Model (2.0GHz
                             Quad‑Core 10th‑Generation Intel Core I5, 16GB, 1TB SSD)</p>
                     </div>
-                    <div class="input mb-5">
+                    <div class="btn-part mb-5">
                         <p class="fw-bold mb-1">Memory</p>
-                        <button id="eightmemory" class="p-2 rounded-3 hover">8 Gb unified memory</button>
-                        <button id="sixteenmemory" class="p-2 rounded-3 hover">16 Gb unified memory</button>
+                        <button id="eightmemory" class="p-2 rounded-3 btn-hover">8 Gb unified memory</button>
+                        <button id="sixteenmemory" class="p-2 rounded-3 btn-hover">16 Gb unified memory</button>
 
                         <p class="fw-bold mb-1 mt-5">Storage</p>
-                        <button id="regulerstorage" class="p-2 rounded-3 hover">256GB SSD Storage</button>
-                        <button id="mediumstorage" class="p-2 rounded-3 hover">512GB SSD Storage</button>
-                        <button id="highstorage" class="p-2 rounded-3 hover">1TB SSD Storage</button>
+                        <button id="regulerstorage" class="p-2 rounded-3 btn-hover">256GB SSD Storage</button>
+                        <button id="mediumstorage" class="p-2 rounded-3 btn-hover">512GB SSD Storage</button>
+                        <button id="highstorage" class="p-2 rounded-3 btn-hover">1TB SSD Storage</button>
 
                         <p class="fw-bold mb-1 mt-5">Choose your delivery option</p>
-                        <button id="regulerDeliCost" class="p-2 rounded-3 hover">Friday,august 25 Prime Free Delivery</button>
-                        <button id="primeDeliCost" class="p-2 rounded-3 hover">Friday,august 21 Delivery charge $20</button>
+                        <button id="regulerDeliCost" class="p-2 rounded-3 btn-hover">Friday,august 25 Prime Free
+                            Delivery</button>
+                        <button id="primeDeliCost" class="p-2 rounded-3 btn-hover">Friday,august 21 Delivery charge
+                            $20</button>
                     </div>
 
                     <div class="price-part pt-5">
                         <div class="row">
                             <div class="col-lg-6">
-                                <p class="after fw-bold py-2">Best Price</p>
+                                <p class="price-border-bottom fw-bold py-2">Best Price</p>
                             </div>
                             <div class="col-lg-6">
                                 <p class="fw-bold py-2">$<span id="bestPrice">1299</span></p>
                             </div>
 
                             <div class="col-lg-6">
-                                <p class="after fw-bold py-2">Extra Memory Cost</p>
+                                <p class="price-border-bottom fw-bold py-2">Extra Memory Cost</p>
                             </div>
                             <div class="col-lg-6">
                                 <p class="fw-bold py-2">$<span id="extraMemoCost">0</span></p>
                             </div>
 
                             <div class="col-lg-6">
-                                <p class="after fw-bold py-2">Extra storage Cost</p>
+                                <p class="price-border-bottom fw-bold py-2">Extra storage Cost</p>
                             </div>
                             <div class="col-lg-6">
                                 <p class="fw-bold py-2">$<span id="extrastorage">0</span></p>
                             </div>
 
                             <div class="col-lg-6">
-                                <p class="after before fw-bold py-2">Delivery Charge</p>
+                                <p class="price-border-bottom price-bold-border fw-bold py-2">Delivery Charge</p>
                             </div>
                             <div class="col-lg-6">
                                 <p class="fw-bold py-2">$<span id="extraDeliveryCost">0</span></p>
                             </div>
 
                             <div class="col-lg-6">
-                                <p class="after fw-bold pb-2">Total Price</p>
+                                <p class="price-border-bottom fw-bold pb-2">Total Price</p>
                             </div>
                             <div class="col-lg-6">
                                 <p class="fw-bold pb-2">$<span id="totalAmount">1299</span></p>
@@ -84,12 +87,12 @@
 
                         </div>
 
-
                     </div>
                     <div class="addpromo">
                         <p class="fw-normal fs-5 mt-2 mb-1">Add Promo code</p>
                         <input id="inputPromo" type="text" class="form-control w-50 d-inline">
-                        <button id="promobtn" class="btn btn-danger text-white d-inline hover-green border-0">Apply</button>
+                        <button id="promobtn"
+                            class="btn btn-danger text-white d-inline promo-btn border-0">Apply</button>
                     </div>
                 </div>
             </div>
@@ -98,8 +101,6 @@
             <h3 class="fw-bold text-center">Total: $<span id="lastTotal">1299</span></h3>
         </div>
     </section>
-
-
 
 
     <!-- js link start -->

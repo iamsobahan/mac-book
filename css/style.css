@@ -1,8 +1,10 @@
-.after {
+/* price part border bottom css start */
+
+.price-border-bottom {
     position: relative;
 }
 
-.after::after {
+.price-border-bottom::after {
     position: absolute;
     bottom: -10px;
     left: -5px;
@@ -13,25 +15,35 @@
 
 }
 
-.before::after {
+.price-bold-border::after {
     height: 2px;
     background: black;
 }
 
-.hover {
+/* price part border bottom css end */
+
+/* button css start */
+
+.btn-hover {
     transition: .4s;
 }
 
-.hover:hover {
+.btn-hover:hover {
     background: black;
     color: white;
 }
 
-.hover-green {
+/* promo apply btn start */
+
+.promo-btn {
     transition: .4s;
 }
 
-.hover-green:hover {
+.promo-btn:hover {
     background: green;
     color: white;
 }
+
+/* promo apply btn end */
+
+/*  button css end */

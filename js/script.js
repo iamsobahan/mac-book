@@ -19,15 +19,14 @@ function extraDeliveryCost(deliveryCost) {
 
 function promoCode() {
     const promoInput = document.getElementById('inputPromo');
-    if (promoInput.value == 'stevekaku ') {
+    if (promoInput.value == 'stevekaku') {
         const subTotal = document.getElementById('lastTotal');
-        const subTotalInner = parseInt(subTotal.innerText);
+        const totalPriceAmount = document.getElementById('totalAmount');
+        const subTotalInner = parseInt(totalPriceAmount.innerText);
         const promoCount = subTotalInner / 20;
         const TotalValue = subTotalInner - promoCount;
         subTotal.innerText = Math.round(TotalValue);
         promoInput.value = '';
-        promoInput.setAttribute('disabled', true);
-        promoInput.setAttribute('title', "You can use Promo code Once");
 
     }
 
@@ -45,45 +44,52 @@ function totalPrice() {
     document.getElementById('lastTotal').innerText = total;
 
 }
+// memory cost count addeventlistener for 180
 
 document.getElementById('sixteenmemory').addEventListener('click', function () {
     extraMemoryCost(180);
     totalPrice();
 })
 
-
+// memory cost count addeventlistener f0r 0
 document.getElementById('eightmemory').addEventListener('click', function () {
     extraMemoryCost(0);
     totalPrice();
 })
 
+
+// storage cost count addeventlistener f0r 0
 document.getElementById('regulerstorage').addEventListener('click', function () {
     extraStorageCost(0);
     totalPrice();
 })
 
-
+// storage cost count addeventlistener f0r 100
 document.getElementById('mediumstorage').addEventListener('click', function () {
     extraStorageCost(100);
     totalPrice();
 })
 
-
+// storage cost count addeventlistener f0r 180
 document.getElementById('highstorage').addEventListener('click', function () {
     extraStorageCost(180);
     totalPrice();
 })
 
-
+// reguler delivery  cost count addeventlistener f0r 0
 document.getElementById('regulerDeliCost').addEventListener('click', function () {
     extraDeliveryCost(0);
     totalPrice();
 })
 
+// reguler delivery  cost count addeventlistener f0r 20 and created a function by extradeliveryCost
+
 document.getElementById('primeDeliCost').addEventListener('click', function () {
     extraDeliveryCost(20);
     totalPrice();
 })
+
+// promocode code addEventListener and created a function by promocode on the top
 
 document.getElementById('promobtn').addEventListener('click', function () {
     promoCode();
